@@ -233,6 +233,17 @@
   .price .btn-primary{font-size:18px;padding:20px 52px}
   .price .reassure{margin-top:24px;font-size:13px;color:var(--muted-pale)}
 
+  /* ===== 特定商取引法に基づく表記 ===== */
+  .law{background:var(--paper-2);padding:clamp(48px,7vw,72px) 0}
+  .law .law-ttl{font-size:16px;font-weight:700;letter-spacing:.06em;margin-bottom:22px}
+  .law dl{display:grid;grid-template-columns:220px 1fr;font-size:13px;line-height:1.8;color:var(--muted);border-top:1px solid var(--line)}
+  .law dt,.law dd{padding:10px 14px;border-bottom:1px solid var(--line)}
+  .law dt{font-weight:700;color:var(--ink);background:rgba(216,208,192,.22)}
+  @media(max-width:680px){
+    .law dl{grid-template-columns:1fr}
+    .law dt{border-bottom:none;padding-bottom:2px}
+  }
+
   /* ===== footer ===== */
   footer{background:#070C12;color:#6E7C86;padding:48px 0;text-align:center;font-size:13px;line-height:1.9}
   footer .name{font-family:var(--serif);color:#AFC1C2;font-size:16px;letter-spacing:.05em;margin-bottom:10px}
@@ -302,7 +313,7 @@
       <a href="#price" class="btn btn-primary">講座の詳細を見る</a>
       <a href="#build" class="btn btn-ghost">何を作るのか見る</a>
     </div>
-    <p class="hero-note reveal">動画 約1時間 ＋ 1ヶ月メール質問サポート ／ パソコン1台で始められます</p>
+    <p class="hero-note reveal">動画 約1時間 ／ パソコン1台で始められます</p>
   </div>
 </header>
 
@@ -511,9 +522,9 @@
       </div>
       <div class="dcard reveal">
         <div class="num">SUPPORT 02</div>
-        <h4>AIファーストのサポート</h4>
-        <span class="big">1 ヶ月間</span>
-        <p style="margin-top:14px">作っていて詰まったら、まずはその質問を、そのままClaude（AI）に投げてみてください。たいていのことは、それで解決します。それでもどうしても解決しないことだけ、1ヶ月間メールで送ってください。質問する力そのものも、ここで身につきます。</p>
+        <h4>AIに聞き続ける力</h4>
+        <span class="big">ずっと使える</span>
+        <p style="margin-top:14px">作っていて詰まったら、その質問をそのままClaude(AI)に投げてください。「分からないなら分からないと言って」と添えると、正直な答えが返ってきます。言い方を変えて、もう一度聞く。この往復で、たいていのことは解決します。「自分で聞けば片づく」という実感そのものが、この講座で手に入るいちばん大きなもので、講座が終わったあとも消えません。メールなどの個別サポートは含まれていません。</p>
       </div>
     </div>
   </div>
@@ -526,11 +537,11 @@
     <h2 class="sec reveal" style="color:#fff">一度作れる側に回れば、ずっと作れる。</h2>
     <div class="pricebox reveal">
       <div class="ttl">LINE出張日当アプリ開発講座</div>
-      <div class="amount"><span class="y">¥</span><span class="n">300,000</span></div>
+      <div class="amount"><span class="y">¥</span><span class="n">50,000</span></div>
       <div class="taxnote">（税込）</div>
       <ul>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>アプリを作り切る解説動画（約1時間）</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>まずAIで解決、それでも無理な時の1ヶ月メールサポート</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>詰まったときにAIで解決する進め方（個別サポートは含まれません）</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>自社用に改造していくための土台</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>「何でも作れる」最初の1個の成功体験</li>
       </ul>
@@ -540,17 +551,42 @@
   </div>
 </section>
 
+<!-- ============ 特定商取引法に基づく表記 ============ -->
+<section class="law" id="law">
+  <div class="wrap narrow">
+    <h2 class="law-ttl">特定商取引法に基づく表記</h2>
+    <dl>
+      <dt>販売事業者</dt><dd>株式会社ジリーナ</dd>
+      <dt>代表者</dt><dd>石川 誠</dd>
+      <dt>所在地</dt><dd>〒460-0007 愛知県名古屋市中区新栄2-4-5 東和パークビル西館501</dd>
+      <dt>電話番号</dt><dd>052-226-1300</dd>
+      <dt>商品名</dt><dd>出張日当アプリ開発講座</dd>
+      <dt>販売価格</dt><dd>50,000円（税込）</dd>
+      <dt>商品代金以外の必要料金</dt><dd>銀行振込手数料はお客様のご負担となります。受講に必要な各種サービスの利用料（AI利用料等）は別途お客様のご負担となります。</dd>
+      <dt>支払方法</dt><dd>銀行振込（一括）</dd>
+      <dt>支払時期</dt><dd>お申込み後にお送りする案内メールに記載の期日までにお振込みください。</dd>
+      <dt>引渡時期</dt><dd>ご入金確認後3営業日以内に、お申込み時にご指定のGoogleアカウントへ教材フォルダの閲覧権限を付与し、メールにてご連絡します。</dd>
+      <dt>視聴期間</dt><dd>アクセス権の付与日から6ヶ月間。延長はありません。</dd>
+      <dt>利用条件</dt><dd>Googleアカウント必須。閲覧のみ。ダウンロード・複製・第三者への共有・転売は禁止です。</dd>
+      <dt>サポート</dt><dd>なし（動画教材の提供のみ）</dd>
+      <dt>返品・返金について</dt><dd>商品の性質上、お申込み後の返品・返金は一切承っておりません。</dd>
+      <dt>動作環境</dt><dd>Windows 10以降 または macOS 12以降。インターネット接続環境、Googleアカウント、および受講に必要な各種サービスのアカウント（有料）が別途必要です。</dd>
+    </dl>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
     <div class="name">LINE出張日当アプリ開発講座</div>
     <p>※ 本講座はアプリの「作り方」を提供するものです。税務上の可否・金額の妥当性は各社の顧問税理士の確認が前提となります。</p>
+    <p style="margin-top:10px"><a href="#law">特定商取引法に基づく表記</a></p>
     <p style="margin-top:10px"><a href="https://docs.google.com/forms/d/e/1FAIpQLScqWqEV1oNYxp4X6P6KNYc24z9lLtzlDswS4neUS4MTc46pdg/viewform" target="_blank" rel="noopener">講座に申し込む</a></p>
   </div>
 </footer>
 
 <!-- sticky mobile CTA -->
 <div class="sticky">
-  <div class="p">¥300,000<small>動画+1ヶ月サポート</small></div>
+  <div class="p">¥50,000<small>動画 約1時間・買い切り</small></div>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLScqWqEV1oNYxp4X6P6KNYc24z9lLtzlDswS4neUS4MTc46pdg/viewform" target="_blank" rel="noopener" class="btn btn-primary">申し込む</a>
 </div>
 
